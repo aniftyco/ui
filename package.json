@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "author": {
+    "name": "Nifty Development, LLC",
+    "email": "support@aniftyco.com",
+    "url": "https://aniftyco.com"
+  },
+  "contributors": [
+    {
+      "name": "Josh Manders",
+      "url": "https://twitter.com/joshmanders"
+    }
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "npm": ">=v8.15.0",
+    "node": ">=16.17.0"
+  },
+  "eslintConfig": {
+    "extends": "nifty/react",
+    "ignorePatterns": [
+      "**/*.js"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.yaml",
+        "options": {
+          "singleQuote": false
+        }
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.11",
+    "eslint": "^8.32.0",
+    "eslint-config-nifty": "^3.3.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lerna": "^6.4.1",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  }
+}

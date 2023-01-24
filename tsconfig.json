@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "pretty": true,
+    "declaration": true
+  },
+  "exclude": ["node_modules"]
+}
