@@ -11,7 +11,11 @@
       "url": "https://twitter.com/joshmanders"
     }
   ],
+  "scripts": {
+    "start": "lerna run build && lerna run start"
+  },
   "workspaces": [
+    "example/",
     "packages/*"
   ],
   "engines": {
@@ -38,6 +42,8 @@
   },
   "devDependencies": {
     "@types/node": "^16.18.11",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
     "eslint": "^8.32.0",
     "eslint-config-nifty": "^3.3.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -45,6 +51,10 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "lerna": "^6.4.1",
     "prettier": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.1.2",
+    "type-fest": "^3.5.3",
     "typescript": "^4.9.4"
   }
 }

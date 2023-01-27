@@ -1,11 +1,4 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "moduleResolution": "node",
-    "module": "CommonJS",
-    "esModuleInterop": true,
-    "pretty": true,
-    "declaration": true
-  },
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
