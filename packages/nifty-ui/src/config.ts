@@ -22,7 +22,5 @@ export const createConfig: Tailwind = (config: Config = {} as Config) => {
     },
   };
 
-  console.log(twConfig);
-
   return twConfig;
 };
