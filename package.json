@@ -15,7 +15,7 @@
     "start": "lerna run build && lerna run start"
   },
   "workspaces": [
-    "example/",
+    "docs/",
     "packages/*"
   ],
   "engines": {
@@ -25,7 +25,8 @@
   "eslintConfig": {
     "extends": "nifty/react",
     "ignorePatterns": [
-      "**/*.js"
+      "**/*.js",
+      "**/*.jsx"
     ]
   },
   "prettier": {

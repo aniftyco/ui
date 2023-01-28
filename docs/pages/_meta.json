@@ -1,0 +1,35 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Home",
+    "display": "hidden",
+    "theme": {
+      "layout": "full",
+      "breadcrumb": false,
+      "footer": false,
+      "sidebar": false,
+      "toc": false,
+      "pagination": false
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Documentation"
+  },
+  "components": {
+    "type": "menu",
+    "title": "Components",
+    "items": {
+      "docs": {
+        "title": "Avatar",
+        "href": "/docs/components/avatar"
+      }
+    }
+  },
+  "releases": {
+    "type": "page",
+    "title": "Releases ↗",
+    "href": "https://github.com/aniftyco/nifty-ui/releases",
+    "newWindow": true
+  }
+}
