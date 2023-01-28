@@ -18,7 +18,6 @@ module.exports = nextra({
   theme: 'nextra-theme-docs',
   themeConfig: './nextra.config.jsx',
   staticImage: true,
-  latex: true,
   flexsearch: {
     codeblocks: false,
   },

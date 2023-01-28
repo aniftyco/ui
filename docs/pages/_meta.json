@@ -26,9 +26,9 @@
       }
     }
   },
-  "releases": {
+  "changelog": {
     "type": "page",
-    "title": "Releases ↗",
+    "title": "Changelog ↗",
     "href": "https://github.com/aniftyco/nifty-ui/releases",
     "newWindow": true
   }

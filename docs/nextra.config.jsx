@@ -2,12 +2,13 @@ import { Fragment } from "react";
 import nextSeoConfig from "./next-seo.config";
 import { useConfig } from "nextra-theme-docs";
 
+/**  @type {import('nextra-theme-docs').DocsThemeConfig} */
 export default {
   logo: () => <div className="flex space-x-3 divide-x divide-gray-600">
     <h1 className="font-extrabold">Nifty UI</h1>
     <h2 className="pl-3 text-gray-600">UI Library for Nifty React Applications built on Tailwind CSS</h2>
   </div>,
-  logoLink: "/",
+  logoLink: false,
   project: {
     link: 'https://github.com/aniftyco/nifty-ui',
   },
