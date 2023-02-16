@@ -2,17 +2,24 @@ import { FC } from 'react';
 import * as Primative from '@radix-ui/react-avatar';
 import { cx } from '../utils';
 
-export type Props = {
-  src: string;
-  name: string;
-  status?: 'online' | 'offline';
-  delayMs?: number;
-  className?: string;
-};
+import type { RequireAtLeastOne } from 'type-fest';
 
-export const Avatar: FC<Props> = ({ src, name, delayMs, className, status = 'offline' }) => {
+export type AvatarProps = RequireAtLeastOne<
+  {
+    name: string;
+    src?: string;
+    md5?: string;
+    email?: string;
+    status?: 'online' | 'offline';
+    delayMs?: number;
+    className?: string;
+  },
+  'src' | 'md5' | 'email'
+>;
+
+export const Avatar: FC<AvatarProps> = ({ src, name, delayMs, className, status = 'offline' }) => {
   return (
-    <Primative.Root className={cx('relative inline-flex', className)}>
+    <Primative.Root className={cx('relative inline-flex select-none', className)}>
       <Primative.Image src={src} className="object-cover w-full h-full rounded-full" />
       {status === 'online' && (
         <div className="absolute bottom-0 right-0 w-2 h-2 -translate-x-1/2 -translate-y-1/2">

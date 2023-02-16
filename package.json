@@ -12,7 +12,8 @@
     }
   ],
   "scripts": {
-    "start": "lerna run build && lerna run start"
+    "build": "turbo run build",
+    "start": "turbo run start"
   },
   "workspaces": [
     "docs/",
@@ -55,7 +56,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^4.1.2",
-    "type-fest": "^3.5.3",
+    "turbo": "^1.7.4",
+    "type-fest": "^3.5.7",
     "typescript": "^4.9.4"
   }
 }
