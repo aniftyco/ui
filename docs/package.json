@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "next dev",
+    "start": "next dev --port 9090",
     "build": "next build"
   },
   "dependencies": {
@@ -11,8 +11,8 @@
     "next": "13.1.6",
     "next-seo": "^5.15.0",
     "next-themes": "^0.2.1",
-    "nextra": "^2.2.14",
-    "nextra-theme-docs": "^2.2.14",
+    "nextra": "^2.2.19",
+    "nextra-theme-docs": "^2.2.19",
     "nifty-ui": "*",
     "prism-react-renderer": "^1.3.5",
     "react": "18.2.0",

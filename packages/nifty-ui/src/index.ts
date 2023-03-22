@@ -1,4 +1,5 @@
 export { cx } from './utils';
 export { createConfig } from './config';
 
-export { Avatar } from './components/Avatar';
+export { default as Avatar } from './components/Avatar';
+export { DropdownMenu } from './components/DropdownMenu';
