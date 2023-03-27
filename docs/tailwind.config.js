@@ -6,7 +6,7 @@ module.exports = createConfig({
   theme: {
     text: colors.slate[500],
     background: colors.slate[900],
-    primary: colors.blue[600],
+    primary: colors.emerald[600],
     secondary: colors.rose[500],
     accent: colors.violet[500],
     neutral: colors.slate[500],
