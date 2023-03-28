@@ -1,7 +1,7 @@
-const { createConfig } = require('nifty-ui');
-const colors = require('tailwindcss/colors');
+import { defineConfig } from 'nifty-ui';
+import colors from 'tailwindcss/colors';
 
-module.exports = createConfig({
+export default defineConfig({
   content: ['./pages/**/*.{tsx,mdx}', './components/**/*.tsx', './nextra.config.jsx'],
   theme: {
     text: colors.slate[500],
