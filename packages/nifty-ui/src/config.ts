@@ -10,7 +10,7 @@ export type Config = {
 
 export type Tailwind = (config: Config) => TailwindConfig;
 
-export const createConfig: Tailwind = (config: Config = {} as Config) => {
+export const defineConfig: Tailwind = (config: Config = {} as Config) => {
   const twConfig: TailwindConfig = {
     darkMode: 'class',
     content: [...config.content, require('path').resolve(__dirname, 'components/**/*.js')],
