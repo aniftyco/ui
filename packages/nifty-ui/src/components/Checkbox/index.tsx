@@ -19,7 +19,7 @@ export const Checkbox = forwardRef<HTMLDivElement, Props>(({ className, label, s
           className,
           {
             'w-4 h-4': size === 'sm',
-            'w-6 h-6': size === 'md',
+            'w-6 h-6 border-4': size === 'md',
             'w-8 h-8 border-4 rounded-lg': size === 'lg',
             'w-10 h-10 border-4 rounded-lg': size === 'xl',
           }
