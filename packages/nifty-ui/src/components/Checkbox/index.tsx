@@ -16,14 +16,15 @@ export const Checkbox = forwardRef<ElementRef<typeof CheckboxPrimitive.Root>>(({
   return (
     <CheckboxPrimitive.Root
       ref={ref}
-      className={cx('inline-flex items-center justify-center align-middle text-primary', className, {
-        'w-8 h-8': size === 'sm',
-        'w-10 h-10': size === 'md',
-        'w-12 h-12': size === 'lg',
-        'w-14 h-14': size === 'xl',
+      className={cx('inline-flex items-center justify-center align-middle text-primary-light', className, {
+        'w-4 h-4': size === 'sm',
+        'w-6 h-6': size === 'md',
+        'w-8 h-8': size === 'lg',
+        'w-10 h-10': size === 'xl',
       })}
+      onClick={(e) => {}}
     >
-      {<input type="checkbox" />}
+      {<input className="w-32 h-32 text-primary" type="checkbox" />}
     </CheckboxPrimitive.Root>
   );
 });
