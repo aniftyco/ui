@@ -39,11 +39,11 @@ export const Checkbox = forwardRef<HTMLDivElement, Props>(({ className, label, s
       </CheckboxPrimitive.Root>
       {label && (
         <label
-          className={cx('pl-[15px] text-[15px] leading-none text-slate-900 dark:text-slate-300', {
-            'text-xs': size === 'sm',
+          className={cx('pl-[15px] text-[15px] leading-none text-emerald-900 dark:text-slate-300', {
+            'text-xs font-light': size === 'sm',
             'text-md': size === 'md',
-            'text-lg': size === 'lg',
-            'text-xl': size === 'xl',
+            'text-lg font-semibold': size === 'lg',
+            'text-xl font-bold': size === 'xl',
           })}
         >
           {label}
