@@ -15,23 +15,39 @@ export const Checkbox = forwardRef<HTMLDivElement, Props>(({ className, label, s
     <div className="flex items-center">
       <CheckboxPrimitive.Root
         className={cx(
-          'w-4 h-4 border-2 shrink-0 border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-900  disabled:cursor-not-allowed disabled:opacity-50 dark:border-emerald-700 dark:text-emerald-50 dark:focus:ring-emerald-300 dark:focus:ring-offset-emerald-500 rounded ',
+          'w-4 h-4 border-2 shrink-0 border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-900 disabled:cursor-not-allowed disabled:opacity-50 dark:border-emerald-700 dark:text-emerald-50 dark:focus:ring-emerald-300 dark:focus:ring-offset-emerald-500 rounded-md',
           className,
           {
             'w-4 h-4': size === 'sm',
             'w-6 h-6': size === 'md',
-            'w-8 h-8 border-4 rounded-md': size === 'lg',
+            'w-8 h-8 border-4 rounded-lg': size === 'lg',
             'w-10 h-10 border-4 rounded-lg': size === 'xl',
           }
         )}
         defaultChecked={true}
       >
         <CheckboxPrimitive.Indicator className="flex items-center justify-center">
-          <IconCheck className="w-4 h-4 text-emerald-900 dark:text-emerald-500" />
+          <IconCheck
+            className={cx('w-2 h-2 bg-fit rounded text-emerald-900 dark:text-emerald-100', {
+              'w-3 h-3 ': size === 'sm',
+              'w-4 h-4': size === 'md',
+              'w-6 h-6': size === 'lg',
+              'w-8 h-8': size === 'xl',
+            })}
+          />
         </CheckboxPrimitive.Indicator>
       </CheckboxPrimitive.Root>
       {label && (
-        <label className="pl-[15px] text-[15px] leading-none text-slate-900 dark:text-slate-300">{label}</label>
+        <label
+          className={cx('pl-[15px] text-[15px] leading-none text-slate-900 dark:text-slate-300', {
+            'text-xs': size === 'sm',
+            'text-md': size === 'md',
+            'text-lg': size === 'lg',
+            'text-xl': size === 'xl',
+          })}
+        >
+          {label}
+        </label>
       )}
     </div>
   );
