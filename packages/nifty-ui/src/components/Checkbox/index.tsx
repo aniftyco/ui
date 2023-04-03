@@ -28,15 +28,12 @@ export const Checkbox = forwardRef<HTMLDivElement, Props>(({ className, label, s
       >
         <CheckboxPrimitive.Indicator className="flex items-center justify-center">
           <IconCheck
-            className={cx(
-              'w-2 h-2 bg-fit bg-emerald-500 rounded text-emerald-900 dark:text-emerald-100 shadow shadow-emerald-200',
-              {
-                'w-3 h-3 ': size === 'sm',
-                'w-4 h-4': size === 'md',
-                'w-6 h-6': size === 'lg',
-                'w-8 h-8': size === 'xl',
-              }
-            )}
+            className={cx('w-2 h-2 bg-fit bg-emerald-500 rounded text-emerald-100 shadow shadow-emerald-200', {
+              'w-3 h-3 ': size === 'sm',
+              'w-4 h-4': size === 'md',
+              'w-6 h-6': size === 'lg',
+              'w-8 h-8': size === 'xl',
+            })}
           />
         </CheckboxPrimitive.Indicator>
       </CheckboxPrimitive.Root>
