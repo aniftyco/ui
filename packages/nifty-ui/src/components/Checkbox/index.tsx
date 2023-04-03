@@ -15,12 +15,12 @@ export const Checkbox = forwardRef<HTMLDivElement, Props>(({ className, label, s
     <div className="flex items-center">
       <CheckboxPrimitive.Root
         className={cx(
-          'w-4 h-4 border-2 shrink-0 border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-900 disabled:cursor-not-allowed disabled:opacity-50 dark:border-emerald-700 dark:text-emerald-50 dark:focus:ring-emerald-300 dark:focus:ring-offset-emerald-500 rounded-md',
+          'w-4 h-4 border-2 shrink-0 border-slate-500 focus:outline-none focus:ring-1 focus:ring-emerald-900 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-700 dark:text-emerald-50 dark:focus:ring-emerald-300 dark:focus:ring-offset-emerald-500 rounded-md',
           className,
           {
             'w-4 h-4': size === 'sm',
-            'w-6 h-6 border-4': size === 'md',
-            'w-8 h-8 border-4 rounded-lg': size === 'lg',
+            'w-6 h-6 border-2': size === 'md',
+            'w-8 h-8 border-2 rounded-lg': size === 'lg',
             'w-10 h-10 border-4 rounded-lg': size === 'xl',
           }
         )}
