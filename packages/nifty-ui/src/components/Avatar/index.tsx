@@ -31,7 +31,7 @@ const getAvatarSrc = (url: string, hash: string, email: string) => {
   return null;
 };
 
-const Avatar = forwardRef<
+export const Avatar = forwardRef<
   ElementRef<typeof AvatarPrimitive.Root>,
   RequireAtLeastOne<Props, 'name' | 'src' | 'hash' | 'email'>
 >(({ name, hash, email, className, src: url, delayMs = 0, size = 'lg' }, ref) => {
@@ -69,7 +69,3 @@ const Avatar = forwardRef<
     </AvatarPrimitive.Root>
   );
 });
-
-Avatar.displayName = 'Avatar';
-
-export default Avatar;
