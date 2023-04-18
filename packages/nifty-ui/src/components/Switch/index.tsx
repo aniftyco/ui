@@ -12,6 +12,7 @@ export const Switch = React.forwardRef<React.ElementRef<typeof SwitchPrimitives.
   ({ className, label, size }, ref) => (
     <div className="flex items-center">
       <SwitchPrimitives.Root
+        ref={ref}
         className={cx(
           'peer inline-flex h-5 w-8 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=unchecked]:bg-emerald-200 data-[state=checked]:bg-emerald-900 dark:focus:ring-slate-400 dark:focus:ring-offset-emerald-900 dark:data-[state=unchecked]:bg-emerald-700 dark:data-[state=checked]:bg-emerald-400',
           className,
