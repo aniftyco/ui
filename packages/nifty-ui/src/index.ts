@@ -5,3 +5,4 @@ export { Avatar } from './components/Avatar';
 export { DropdownMenu } from './components/DropdownMenu';
 export { Checkbox } from './components/Checkbox';
 export { Switch } from './components/Switch';
+export { Progress } from './components/Progress';
