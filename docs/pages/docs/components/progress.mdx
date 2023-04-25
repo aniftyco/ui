@@ -2,6 +2,40 @@
 title: Progress
 ---
 
+# Progress
+
+Customize by changing the 'value' to whatever fits your needs.
+
+---
+
 import { Progress } from 'nifty-ui';
 
-<Progress position={50} />
+<span className="flex flex-col gap-5">
+  <div>
+    <div className="flex justify-between mx-5 mb-2">
+      <h2>
+        `<Progress value={25} />`
+      </h2>
+      <h2> Progress (25%) </h2>
+    </div>
+    <Progress value={25} />
+  </div>
+  <div>
+    <div className="flex justify-between mx-5 mb-2">
+      <h2>
+        `<Progress value={50} />`
+      </h2>
+      <h2> Progress (50%) </h2>
+    </div>
+    <Progress value={50} />
+  </div>
+  <div>
+    <div className="flex justify-between mx-5 mb-2">
+      <h2>
+        `<Progress value={75} />`
+      </h2>
+      <h2> Progress (75%) </h2>
+    </div>
+    <Progress value={75} />
+  </div>
+</span>
