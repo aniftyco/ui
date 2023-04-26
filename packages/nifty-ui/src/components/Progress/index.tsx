@@ -17,7 +17,7 @@ export const Progress: FC<Props> = ({ value, className }) => {
       value={value}
     >
       <ProgressPrimitive.Indicator
-        className={`bg-primary-dark dark:bg-primary-light w-full h-full rounded-full`}
+        className="bg-primary-dark dark:bg-primary-light w-full h-full rounded-full"
         style={{ transform: `translateX(-${100 - value}%` }}
       />
     </ProgressPrimitive.Root>
