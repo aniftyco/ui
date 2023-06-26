@@ -11,14 +11,18 @@
     "build": "rimraf dist && tsc -p tsconfig.json"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "1.1.2",
     "@radix-ui/react-avatar": "^1.0.2",
     "@radix-ui/react-checkbox": "^1.0.3",
     "@radix-ui/react-dropdown-menu": "^2.0.4",
     "@radix-ui/react-progress": "^1.0.2",
     "@radix-ui/react-switch": "^1.0.2",
     "@tailwindcss/forms": "^0.5.3",
+    "accordion": "^3.0.2",
+    "add": "^2.0.6",
     "clsx": "^1.2.1",
     "md5": "^2.3.0",
+    "shadcn-ui": "^0.2.2",
     "tailwind-merge": "^1.10.0",
     "tailwindcss-animate": "^1.0.5",
     "tinycolor2": "^1.6.0"
