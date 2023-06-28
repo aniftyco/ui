@@ -8,4 +8,5 @@ export { DropdownMenu } from './components/DropdownMenu';
 export { Checkbox } from './components/Checkbox';
 export { Switch } from './components/Switch';
 export { Progress } from './components/Progress';
+export { Label } from './components/Label';
 export * from './components/Accordion';
