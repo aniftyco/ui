@@ -9,4 +9,5 @@ export { Checkbox } from './components/Checkbox';
 export { Switch } from './components/Switch';
 export { Progress } from './components/Progress';
 export { Label } from './components/Label';
+export { RadioGroup } from './components/Radio-Group';
 export * from './components/Accordion';
