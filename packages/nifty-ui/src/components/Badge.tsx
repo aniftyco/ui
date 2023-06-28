@@ -1,4 +1,4 @@
-import { cx } from '../../utils';
+import { cx } from '../utils';
 
 export type Props = {
   className?: string;

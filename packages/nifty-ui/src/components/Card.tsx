@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 
 const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => (
   <div ref={ref} className={cx('rounded-lg border bg-card text-card-foreground shadow-sm', className)} {...props} />

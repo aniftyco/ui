@@ -1,7 +1,6 @@
 import * as React from 'react';
-// import { Button } from 'nifty-ui';
 import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 
 const AlertDialog = AlertDialogPrimitive.Root;
 

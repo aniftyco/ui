@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 import * as ProgressPrimitive from '@radix-ui/react-progress';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 
-export type Props = {
+export type ProgressProps = {
   value: number;
   className?: string;
 };
 // transform translate-z-0
-export const Progress: FC<Props> = ({ value, className }) => {
+export const Progress: FC<ProgressProps> = ({ value, className }) => {
   return (
     <ProgressPrimitive.Root
       className={cx(
