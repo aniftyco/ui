@@ -11,3 +11,4 @@ export { Progress } from './components/Progress';
 export { Label } from './components/Label';
 export * from './components/Radio-Group';
 export * from './components/Accordion';
+export { Button } from './components/Button';
