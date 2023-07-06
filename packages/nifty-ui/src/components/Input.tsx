@@ -22,5 +22,4 @@ const Input = forwardRef<HTMLInputElement, HTMLAttributes<HTMLInputElement> & In
   }
 );
 Input.displayName = 'Input';
-
 export { Input };
