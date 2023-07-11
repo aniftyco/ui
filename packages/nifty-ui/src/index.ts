@@ -23,3 +23,4 @@ export * from './components/Seperator';
 export * from './components/TextArea';
 export * from './components/Select';
 export * from './components/skeleton';
+export * from './components/Dialog';
