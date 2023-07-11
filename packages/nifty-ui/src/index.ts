@@ -25,3 +25,4 @@ export * from './components/Select';
 export * from './components/skeleton';
 export * from './components/Dialog';
 export * from './components/HoverCard';
+export * from './components/MenuBar';
