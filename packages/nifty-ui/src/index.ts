@@ -26,3 +26,5 @@ export * from './components/skeleton';
 export * from './components/Dialog';
 export * from './components/HoverCard';
 export * from './components/MenuBar';
+export * from './components/PopOver';
+export * from './components/ScrollArea';
