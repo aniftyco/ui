@@ -28,3 +28,4 @@ export * from './components/HoverCard';
 export * from './components/MenuBar';
 export * from './components/PopOver';
 export * from './components/ScrollArea';
+export * from './components/Tabs';
