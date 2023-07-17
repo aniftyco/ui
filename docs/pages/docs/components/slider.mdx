@@ -8,16 +8,9 @@ Slide to the left. Slide to the right.
 
 ---
 
-import { cx } from '../utils';
 import { Slider } from 'nifty-ui';
 import { ComponentProps } from 'react';
 
-type SliderProps = ComponentProps<typeof Slider>
-
-export const SliderDemo = ({ className, ...props }: SliderProps) => {
-  return (<Slider defaultValue={[50]} max={100} step={1} className={cx('w-[60%]', className)} {...props} />;
-)}
-
 <div>
-  <SliderDemo className="my-slider" />
+  <Slider defaultValue={[33]} max={100} step={1} />
 </div>

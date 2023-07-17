@@ -8,25 +8,32 @@ Give your users a Toast! PROSTE!
 
 ---
 
-import { Button } from 'nifty-ui';
-import { ToastAction } from 'nifty-ui';
-import { useToast } from 'nifty-ui';
+import { Button, ToastAction, useToast, Toaster } from 'nifty-ui';
+
+export const ToastDemo = () => {
+  const { toast } = useToast();
+
+return (
+
+<Button
+  variant="outline"
+  onClick={() => {
+    toast({
+      title: 'Scheduled: Catch up ',
+      description: 'Friday, February 10, 2023 at 5:57 PM',
+      action: (
+        <ToastAction variant="default" altText="Goto schedule to undo">
+          Undo
+        </ToastAction>
+      ),
+    });
+  }}
+>
+  Add to calendar
+</Button>
+); };
 
 <div>
-  <Button
-    variant="outline"
-    onClick={() => {
-      toast({
-        title: 'Scheduled: Catch up ',
-        description: 'Friday, February 10, 2023 at 5:57 PM',
-        action: (
-          <ToastAction variant="default" altText="Goto schedule to undo">
-            Undo
-          </ToastAction>
-        ),
-      });
-    }}
-  >
-    Add to calendar
-  </Button>
+  <ToastDemo />
+  <Toaster />
 </div>
