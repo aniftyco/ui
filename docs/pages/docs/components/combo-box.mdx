@@ -1,11 +1,28 @@
-import * as React from 'react';
-import { IconCheck, IconSelector } from '@tabler/react-icons';
-import { cx } from '../utils';
-import { Button } from 'nifty-ui';
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from 'nifty-ui';
-import { Popover, PopoverContent, PopoverTrigger } from 'nifty-ui';
+---
+title: Combo Box
+---
 
-const frameworks = [
+# Combo Box
+
+List of searchable menu items.
+
+---
+
+import * as React from 'react';
+import { IconCheck, IconSelector } from '@tabler/icons-react';
+import {
+  Button,
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem, cx, 
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from 'nifty-ui';
+
+export const frameworks = [
 {
 value: 'next.js',
 label: 'Next.js',
@@ -28,7 +45,7 @@ label: 'Astro',
 },
 ];
 
-export default function ComboboxDemo() {
+export const ComboboxDemo = () => {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState('');
 
@@ -54,7 +71,7 @@ return (
               setOpen(false);
             }}
           >
-            <IconCheck className={cn('mr-2 h-4 w-4', value === framework.value ? 'opacity-100' : 'opacity-0')} />
+            <IconCheck className={cx('mr-2 h-4 w-4', value === framework.value ? 'opacity-100' : 'opacity-0')} />
             {framework.label}
           </CommandItem>
         ))}
@@ -63,3 +80,7 @@ return (
   </PopoverContent>
 </Popover>
 ); }
+
+<div className="flex flex-col">
+  <ComboboxDemo />
+</div>
