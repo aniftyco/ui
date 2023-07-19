@@ -35,6 +35,7 @@ export * from './components/Toast';
 export * from './components/Toaster';
 export * from './components/NavigationMenu';
 export * from './components/Command';
+export * from './components/Table';
 
 // Hooks
 export * from './hooks/use-toast';
