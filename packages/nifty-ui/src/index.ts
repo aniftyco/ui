@@ -33,7 +33,7 @@ export * from './components/Tabs';
 export * from './components/Tooltip';
 export * from './components/Toast';
 export * from './components/Toaster';
-// export * from './components/NavigationMenu';
+export * from './components/NavigationMenu';
 export * from './components/Command';
 
 // Hooks
