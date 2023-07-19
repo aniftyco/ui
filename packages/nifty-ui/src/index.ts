@@ -2,6 +2,8 @@ export { cx } from './utils';
 export { defineConfig } from './config';
 
 // Components
+// This needs to be sorted alphabetically
+// and export the exact components
 export * from './components/Alert';
 export * from './components/AlertDialog';
 export * from './components/AspectRatio';
@@ -16,7 +18,7 @@ export * from './components/Progress';
 export * from './components/Label';
 export * from './components/RadioGroup';
 export * from './components/Accordion';
-export * from './components/Button';
+export { Button } from './components/Button';
 export * from './components/Card';
 export * from './components/Input';
 export * from './components/Toggle';
@@ -36,6 +38,8 @@ export * from './components/Toaster';
 export * from './components/NavigationMenu';
 export * from './components/Command';
 export * from './components/Table';
+export * from './components/Calendar';
+// export * from './components/Sheet';
 
 // Hooks
 export * from './hooks/use-toast';
