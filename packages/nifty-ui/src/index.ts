@@ -22,7 +22,7 @@ export { Button } from './components/Button';
 export * from './components/Card';
 export * from './components/Input';
 export * from './components/Toggle';
-export * from './components/Seperator';
+export * from './components/Separator';
 export * from './components/TextArea';
 export * from './components/Select';
 export * from './components/Skeleton';
