@@ -5,12 +5,12 @@ title: Dropdown Menu
 import {
   IconCloud,
   IconCreditCard,
-  IconGithub,
+  IconBrandGithub,
   IconKeyboard,
-  IconLifeBuoy,
+  IconLifebuoy,
   IconLogOut,
   IconMail,
-  IconMessageSquare,
+  IconMessages,
   IconPlus,
   IconPlusCircle,
   IconSettings,
@@ -35,8 +35,8 @@ import {
   DropdownMenuTrigger,
 } from 'nifty-ui';
 
-{' '}
-
+export const DropdownMenuDemo = () => {
+  return (
 <DropdownMenu>
   <DropdownMenuTrigger asChild>
     <Button variant="outline">Open</Button>
@@ -122,3 +122,10 @@ import {
     </DropdownMenuItem>
   </DropdownMenuContent>
 </DropdownMenu>
+  )
+
+}
+
+<div>
+  <DropdownMenuDemo />
+</div>
