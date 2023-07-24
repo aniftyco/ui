@@ -1,3 +1,13 @@
+---
+title: Date Picker
+---
+
+# Date Picker
+
+Simple component to select Dates quickly and easily.
+
+---
+
 import React, { useState } from "react";
 import { format } from "date-fns";
 import { IconCalendar } from "@tabler/icons-react";
@@ -14,9 +24,8 @@ import {
 export const DatePickerDemo = () => {
   const [date, setDate] = useState();
 
-return (
+return <Popover>
 
-<Popover>
   <PopoverTrigger asChild>
     <Button
       variant="outline"
@@ -31,10 +40,9 @@ return (
     <PopoverContent className="w-auto p-0">
         <Calendar mode="single" selected={date} onSelect={setDate} initialFocus={true} />
     </PopoverContent>
-    </Popover>
-    )
+    </Popover>;
 
-};
+}
 
 <div>
   <DatePickerDemo />

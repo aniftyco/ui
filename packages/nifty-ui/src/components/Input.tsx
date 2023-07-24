@@ -1,4 +1,4 @@
-import { forwardRef, HTMLAttributes } from 'react';
+import { forwardRef, InputHTMLAttributes } from 'react';
 import { cx } from '../utils';
 
 export type InputProps = {
@@ -6,7 +6,7 @@ export type InputProps = {
   className?: string;
 };
 
-const Input = forwardRef<HTMLInputElement, HTMLAttributes<HTMLInputElement> & InputProps>(
+const Input = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>(
   ({ className, type, ...props }, ref) => {
     return (
       <input

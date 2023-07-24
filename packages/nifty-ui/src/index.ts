@@ -108,7 +108,16 @@ export {
   SelectSeparator,
 } from './components/Select';
 export { Separator } from './components/Separator';
-// export { Sheet, SheetTrigger, SheetClose, SheetContent, SheetHeader, SheetFooter, SheetTitle, SheetDescription } from './components/Sheet';
+export {
+  Sheet,
+  SheetTrigger,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetFooter,
+  SheetTitle,
+  SheetDescription,
+} from './components/Sheet';
 export { Skeleton } from './components/Skeleton';
 export { Slider } from './components/Slider';
 export { Switch } from './components/Switch';
@@ -138,6 +147,8 @@ export {
 export * from './components/Toaster';
 export { Toggle } from './components/Toggle';
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './components/Tooltip';
+
+export { DataTable } from './components/DataTable';
 
 // Hooks
 export { toast, useToast } from './hooks/use-toast';

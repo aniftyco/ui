@@ -2,9 +2,17 @@
 title: Dropdown Menu
 ---
 
+# Dropdown Menu
+
+A button triggers the menu, and gives users a list of menu opions.
+
+---
+
 import {
   IconCloud,
+  IconGithub,
   IconCreditCard,
+  IconLifeBuoy,
   IconBrandGithub,
   IconKeyboard,
   IconLifebuoy,
@@ -51,17 +59,17 @@ export const DropdownMenuDemo = () => {
         <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
       </DropdownMenuItem>
       <DropdownMenuItem>
-        <IconCreditCard className="mr-2 h-4 w-4" />
+        <IconUser className="mr-2 h-4 w-4" />
         <span>Billing</span>
         <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
       </DropdownMenuItem>
       <DropdownMenuItem>
-        <IconSettings className="mr-2 h-4 w-4" />
+        <IconUser className="mr-2 h-4 w-4" />
         <span>Settings</span>
         <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
       </DropdownMenuItem>
       <DropdownMenuItem>
-        <IconKeyboard className="mr-2 h-4 w-4" />
+        <IconUser className="mr-2 h-4 w-4" />
         <span>Keyboard shortcuts</span>
         <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
       </DropdownMenuItem>
@@ -69,54 +77,54 @@ export const DropdownMenuDemo = () => {
     <DropdownMenuSeparator />
     <DropdownMenuGroup>
       <DropdownMenuItem>
-        <IconUsers className="mr-2 h-4 w-4" />
+        <IconUser className="mr-2 h-4 w-4" />
         <span>Team</span>
       </DropdownMenuItem>
       <DropdownMenuSub>
         <DropdownMenuSubTrigger>
-          <IconUserPlus className="mr-2 h-4 w-4" />
+          <IconUser className="mr-2 h-4 w-4" />
           <span>Invite users</span>
         </DropdownMenuSubTrigger>
         <DropdownMenuPortal>
           <DropdownMenuSubContent>
             <DropdownMenuItem>
-              <IconMail className="mr-2 h-4 w-4" />
+              <IconUser className="mr-2 h-4 w-4" />
               <span>Email</span>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <IconMessageSquare className="mr-2 h-4 w-4" />
+              <IconUser className="mr-2 h-4 w-4" />
               <span>Message</span>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <IconPlusCircle className="mr-2 h-4 w-4" />
+              <IconUser className="mr-2 h-4 w-4" />
               <span>More...</span>
             </DropdownMenuItem>
           </DropdownMenuSubContent>
         </DropdownMenuPortal>
       </DropdownMenuSub>
       <DropdownMenuItem>
-        <IconPlus className="mr-2 h-4 w-4" />
+        <IconUser className="mr-2 h-4 w-4" />
         <span>New Team</span>
         <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
       </DropdownMenuItem>
     </DropdownMenuGroup>
     <DropdownMenuSeparator />
     <DropdownMenuItem>
-      <IconGithub className="mr-2 h-4 w-4" />
+      <IconUser className="mr-2 h-4 w-4" />
       <span>GitHub</span>
     </DropdownMenuItem>
     <DropdownMenuItem>
-      <IconLifeBuoy className="mr-2 h-4 w-4" />
+      <IconUser className="mr-2 h-4 w-4" />
       <span>Support</span>
     </DropdownMenuItem>
     <DropdownMenuItem disabled>
-      <IconCloud className="mr-2 h-4 w-4" />
+      <IconUser className="mr-2 h-4 w-4" />
       <span>API</span>
     </DropdownMenuItem>
     <DropdownMenuSeparator />
     <DropdownMenuItem>
-      <IconLogOut className="mr-2 h-4 w-4" />
+      <IconUser className="mr-2 h-4 w-4" />
       <span>Log out</span>
       <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
     </DropdownMenuItem>
