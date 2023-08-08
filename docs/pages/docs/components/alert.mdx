@@ -12,7 +12,25 @@ import { IconPrompt, IconRipple } from '@tabler/icons-react';
 
 import { Alert, AlertDescription, AlertTitle } from 'nifty-ui';
 
+### Default
+
 <Alert variant="default">
+  <IconPrompt className="h-4 w-4" />
+  <AlertTitle>Heads up!</AlertTitle>
+  <AlertDescription>You can add components to your app using the cli.</AlertDescription>
+</Alert>
+
+### Danger
+
+<Alert variant="destructive">
+  <IconPrompt className="h-4 w-4" />
+  <AlertTitle>Heads up!</AlertTitle>
+  <AlertDescription>You can add components to your app using the cli.</AlertDescription>
+</Alert>
+
+### Warning
+
+<Alert variant="warning">
   <IconPrompt className="h-4 w-4" />
   <AlertTitle>Heads up!</AlertTitle>
   <AlertDescription>You can add components to your app using the cli.</AlertDescription>

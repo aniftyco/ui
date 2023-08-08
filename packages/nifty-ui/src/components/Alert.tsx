@@ -2,7 +2,7 @@ import { forwardRef, HTMLAttributes } from 'react';
 import { cx } from '../utils';
 
 export type AlertProps = {
-  variant?: 'default' | 'destructive';
+  variant?: 'default' | 'destructive' | 'warning';
   className?: 'string';
 };
 
@@ -13,12 +13,12 @@ const Alert = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement> & AlertP
       ref={ref}
       role="alert"
       className={cx(
-        'relative w-full rounded-lg border p-4 [&:has(svg)]:pl-11 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground',
+        'relative w-full rounded-lg border p-4 [&:has(svg)]:pl-11 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-black',
         className,
         {
-          'bg-background text-foreground': variant === 'default',
-          'border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive':
-            variant === 'destructive',
+          'bg-primary text-black': variant === 'default',
+          'bg-danger border-danger text-black dark:border-danger [&>svg]:text-black': variant === 'destructive',
+          'bg-warning border-warning text-black dark:border-warning [&>svg]:text-black': variant === 'warning',
         }
       )}
     />
