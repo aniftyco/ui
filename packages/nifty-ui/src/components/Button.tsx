@@ -5,7 +5,7 @@ import { cx } from '../utils';
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   asChild?: boolean;
   variant?: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link';
-  size?: 'default' | 'sm' | 'lg' | 'icon';
+  size?: 'default' | 'sm' | 'md' | 'lg' | 'icon';
 }
 
 export const variantClassNames = {
@@ -23,18 +23,22 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         className={cx(
-          'inline-flex items-center justify-center px-1 rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+          'inline-flex items-center justify-center px-2 py-1 rounded-md text-sm font-medium ring-offset-background transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
           className,
           variantClassNames[variant],
           {
-            'bg-primary text-primary-foreground hover:bg-primary/90': variant === 'default',
-            'bg-destructive text-destructive-foreground hover:bg-destructive/90': variant === 'destructive',
-            'border border-input bg-background hover:bg-accent hover:text-accent-foreground': variant === 'outline',
-            'bg-secondary text-secondary-foreground hover:bg-secondary/80': variant === 'secondary',
-            'hover:bg-accent hover:text-accent-foreground': variant === 'ghost',
-            'text-primary underline-offset-4 hover:underline': variant === 'link',
+            'bg-primary text-primary-foreground hover:bg-primary/70 shadow-md': variant === 'default',
+            'bg-danger text-warning-foreground hover:bg-danger/70 shadow-sm': variant === 'destructive',
+            'border border-input bg-transparent hover:bg-primary hover:text-accent-foreground': variant === 'outline',
+            'bg-accent text-secondary-foreground hover:bg-accent/70 shadow-sm': variant === 'secondary',
+            'hover:bg-transparent hover:text-accent': variant === 'ghost',
+            'underline-offset-4 hover:underline': variant === 'link',
           },
-          {}
+          {
+            'w-12 h-6 text-xs font-light': size === 'sm',
+            'w-18 h-8 text-md': size === 'md',
+            'w-24 h-10 text-lg': size === 'lg',
+          }
         )}
         ref={ref}
         {...props}

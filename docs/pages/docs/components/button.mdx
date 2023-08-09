@@ -10,12 +10,48 @@ A component styled as a button.
 
 import { Button } from 'nifty-ui';
 
-<div className="flex gap-5">
+<div className="flex flex-col gap-5">
 
-<Button variant="default">Button</Button>
-<Button variant="secondary">Button</Button>
-<Button variant="destructive">Button</Button>
-<Button variant="ghost">Button</Button>
-<Button variant="link">Button</Button>
+    ### Default
+    <div className='flex gap-3' >
+        <Button size='lg' variant="default">Large</Button>
+        <Button size='md' variant="default">Medium</Button>
+        <Button size='sm' variant="default">Small</Button>
+    </div>
+
+    ### Secondary
+    <div className='flex gap-4'>
+        <Button size='lg' variant="secondary">Large</Button>
+        <Button size='md' variant="secondary">Medium</Button>
+        <Button size='sm' variant="secondary">Small</Button>
+    </div>
+
+    ### Outline
+    <div className='flex gap-4'>
+        <Button size='lg' variant="outline">Large</Button>
+        <Button size='md' variant="outline">Medium</Button>
+        <Button size='sm' variant="outline">Small</Button>
+    </div>
+
+    ### Ghost
+    <div className='flex gap-4'>
+        <Button size='lg' variant="ghost">Large</Button>
+        <Button size='md' variant="ghost">Medium</Button>
+        <Button size='sm' variant="ghost">Small</Button>
+    </div>
+
+    ### Link
+    <div className='flex gap-4'>
+        <Button size='lg' variant="link">Large</Button>
+        <Button size='md' variant="link">Medium</Button>
+        <Button size='sm' variant="link">Small</Button>
+    </div>
+
+    ### Destructive
+    <div className='flex gap-4'>
+        <Button size='lg' variant="destructive">Large</Button>
+        <Button size='md' variant="destructive">Medium</Button>
+        <Button size='sm' variant="destructive">Small</Button>
+    </div>
 
 </div>
