@@ -11,6 +11,31 @@ Yep its a toggle. For Toggling? To toggle? You decide.
 import { Toggle } from 'nifty-ui';
 import { IconBold } from '@tabler/icons-react';
 
-<Toggle aria-label="Toggle italic">
-  <IconBold className="h-4 w-4" />
+<div className='flex gap-4'>
+<div>
+  Large
+  <Toggle size="lg" aria-label="Toggle italic">
+    <IconBold className="h-8 w-8" />
+  </Toggle>
+</div>
+
+<div>
+Default
+
+<Toggle size="default" aria-label="Toggle italic">
+  <IconBold className="h-6 w-6" />
 </Toggle>
+</div>
+
+<div>
+Small
+
+  <Toggle size="sm" aria-label="Toggle italic">
+    <IconBold className="h-4 w-4" />
+  </Toggle>
+  </div>
+</div>
+
+```tsx
+<div foo={bar} />
+```
