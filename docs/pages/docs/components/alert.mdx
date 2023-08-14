@@ -12,7 +12,7 @@ import { IconPrompt, IconRipple } from '@tabler/icons-react';
 
 import { Alert, AlertDescription, AlertTitle } from 'nifty-ui';
 
-### Default
+#### Default
 
 <Alert variant="default">
   <IconPrompt className="h-4 w-4" />
@@ -20,7 +20,7 @@ import { Alert, AlertDescription, AlertTitle } from 'nifty-ui';
   <AlertDescription>You can add components to your app using the cli.</AlertDescription>
 </Alert>
 
-### Danger
+#### Danger
 
 <Alert variant="destructive">
   <IconPrompt className="h-4 w-4" />
@@ -28,10 +28,80 @@ import { Alert, AlertDescription, AlertTitle } from 'nifty-ui';
   <AlertDescription>You can add components to your app using the cli.</AlertDescription>
 </Alert>
 
-### Warning
+#### Warning
 
 <Alert variant="warning">
   <IconPrompt className="h-4 w-4" />
   <AlertTitle>Heads up!</AlertTitle>
   <AlertDescription>You can add components to your app using the cli.</AlertDescription>
 </Alert>
+
+## Usage
+
+```tsx
+<Alert variant="default">
+  <IconPrompt className="h-4 w-4" />
+  <AlertTitle>Heads up!</AlertTitle>
+  <AlertDescription>You can add components to your app using the cli.</AlertDescription>
+</Alert>
+```
+
+## Props
+
+### variant
+
+<div className="flex items gap-5">
+  <div>
+    <h2 className="text-center underline">Default</h2>
+    ```tsx
+    <Alert variant="default">...</Alert>
+    ```
+  </div>
+  <div>
+    <h2 className="text-center underline">Description</h2>
+    <p className="pt-5 px-10">
+      Simple "default" for you to use or cusomize using <u>className</u>.
+    </p>
+  </div>
+</div>
+
+<div className="flex items gap-5">
+  <div>
+    <h2 className="text-center underline">Danger</h2>
+    ```tsx
+    <Alert variant="danger">...</Alert>
+    ```
+  </div>
+  <div>
+    <p className="mt-7 pt-5 px-10">When the user is about to do something they may regret in the morning.</p>
+  </div>
+</div>
+
+<div className="flex items gap-5">
+  <div>
+    <h2 className="text-center underline">Warning</h2>
+    ```tsx
+    <Alert variant="warning">...</Alert>
+    ```
+  </div>
+  <div>
+    <p className="mt-7 pt-5 px-10">When the user is flirting with the danger zone.</p>
+  </div>
+</div>
+
+### className <br /> (optional)
+
+<div className='flex justify-between gap-3 my-10'>
+
+<div className="flex flex-col">
+  <h2 className="text-center underline">className</h2>
+  ```tsx
+  <Accordion className="...">...</Accordion>
+  ```
+</div>
+
+<div className="flex flex-col">
+  <h2 className="text-center underline">Description</h2>
+  <p className="flex mt-6 px-4">Style how you need, by using Tailwind to modify the className.</p>
+</div>
+</div>
