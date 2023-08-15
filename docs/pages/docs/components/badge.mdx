@@ -10,8 +10,193 @@ Flex status with badges.
 
 import { Badge } from 'nifty-ui';
 
-<div className="flex gap-5">
-  <Badge>Badge</Badge>
-  <Badge variant="secondary">Badge</Badge>
-  <Badge variant="destructive">Badge</Badge>
+#### Default
+
+<div className="flex w-1/2 justify-between gap-5">
+  <Badge size="lg" variant="default">
+    Badge
+  </Badge>
+  <Badge size="md" variant="default">
+    Badge
+  </Badge>
+  <Badge size="sm" variant="default">
+    Badge
+  </Badge>
+</div>
+
+#### Secondary
+
+<div className="flex w-1/2 justify-between gap-5">
+  <Badge size="lg" variant="secondary">
+    Badge
+  </Badge>
+  <Badge size="md" variant="secondary">
+    Badge
+  </Badge>
+  <Badge size="sm" variant="secondary">
+    Badge
+  </Badge>
+</div>
+
+#### Outline
+
+<div className="flex w-1/2 justify-between gap-5">
+  <Badge size="lg" variant="outline">
+    Badge
+  </Badge>
+  <Badge size="md" variant="outline">
+    Badge
+  </Badge>
+  <Badge size="sm" variant="outline">
+    Badge
+  </Badge>
+</div>
+
+#### Destructive
+
+<div className="flex w-1/2 justify-between gap-5">
+  <Badge size="lg" variant="destructive">
+    Badge
+  </Badge>
+  <Badge size="md" variant="destructive">
+    Badge
+  </Badge>
+  <Badge size="sm" variant="destructive">
+    Badge
+  </Badge>
+</div>
+
+## Usage
+
+```tsx
+<Badge size="md" variant="default">
+  Badge
+</Badge>
+```
+
+## Types
+
+#### Size
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Small</h2>
+    ```tsx
+    <Badge size="sm" variant="default">
+      ...
+    </Badge>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">Small badges for little things.</p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Medium</h2>
+    ```tsx
+    <Badge size="medium" variant="default">
+      ...
+    </Badge>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 mt-6">
+    <p className="flex mt-5 px-4">Normal size badges for doing normal things.</p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Large</h2>
+    ```tsx
+    <Badge size="lg" variant="default">
+      ...
+    </Badge>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 mt-6">
+    <p className="flex mt-5 px-4">Big badges for doing big things.</p>
+  </div>
+</div>
+
+#### Variant
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Default</h2>
+    ```tsx
+    <Badge size="md" variant="default">
+      ...
+    </Badge>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">A badge with a primary color based on you Tailwind Config File</p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Secondary</h2>
+    ```tsx
+    <Badge size="medium" variant="secondary">
+      ...
+    </Badge>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 mt-6">
+    <p className="flex mt-5 px-4">A badge with a secondary color based on you Tailwind Config File</p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Outline</h2>
+    ```tsx
+    <Badge size="medium" variant="outline">
+      ...
+    </Badge>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 mt-6">
+    <p className="flex mt-5 px-4">An outlined Badge the color is based on you Tailwind Config File</p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Destructive</h2>
+    ```tsx
+    <Badge size="lg" variant="destructive">
+      ...
+    </Badge>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 mt-6">
+    <p className="flex mt-5 px-4">A Badge for total destruction</p>
+  </div>
+</div>
+
+### className <br /> (optional)
+
+<div className='flex justify-between gap-3 my-10'>
+
+<div className="flex flex-col">
+  <h2 className="text-center underline">className</h2>
+
+```tsx
+<Badge size="md" variant="default" className="...">
+  ...
+</Badge>
+```
+
+</div>
+
+<div className="flex flex-col">
+  <h2 className="text-center underline">Description</h2>
+  <p className="flex mt-6 px-4">Style how you need, by using Tailwind to modify the className.</p>
+</div>
 </div>

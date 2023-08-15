@@ -74,37 +74,65 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from 'ni
 
 </div>
 
-<div className='flex justify-between gap-3 my-10'>
+#### Type
 
-{' '}
+<div className='flex gap-3 my-10'>
 
 <div className="flex flex-col">
-  <h2 className="text-center underline">type</h2>
+  <h2 className="text-center underline">single</h2>
   ```tsx
   <Accordion type="single">...</Accordion>
   ```
 </div>
 
-{' '}
-
 <div className="flex flex-col justify-center">
-  <p className="flex mt-8 px-4"> um...</p>
+  <p className="flex mt-8 px-8">If you only want one little dropdown.</p>
+</div>
 </div>
 
+<div className="flex gap-3">
+
+<div>
+  <h2 className="text-center underline">multiple</h2>
+  ```tsx
+  <Accordion type="multiple">...</Accordion>
+  ```
 </div>
+
+  <p className="flex mt-10 pt-4 px-4">If you only want all the little dropdowns.</p>
+</div>
+
+### Collapsible
 
 <div className='flex justify-between gap-3 my-10'>
 
-<div className="flex flex-col">
-  <h2 className="text-center underline">collapsible</h2>
+<div className="flex w-1/2 flex-col">
+  <h2 className="text-center underline">true</h2>
   ```tsx
   <Accordion collapsible>...</Accordion>
   ```
 </div>
 
-<div className="flex flex-col">
+<div className="flex">
   <p className="flex mt-8 px-10 py-5">
     Use this to HIDE the information when users arrive, or don&apos;t its up to you
+  </p>
+</div>
+
+</div>
+
+<div className='flex  gap-3 my-10'>
+
+<div className="flex w-1/2 flex-col">
+  <h2 className="text-center underline">False</h2>
+  ```tsx
+  <Accordion>...</Accordion>
+  ```
+</div>
+
+<div className="flex">
+  <p className="flex mt-8 px-10 py-5">
+    Use this to SHOW the information when users arrive, or don&apos;t its up to you
   </p>
 </div>
 
