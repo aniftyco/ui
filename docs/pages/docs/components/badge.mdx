@@ -74,7 +74,7 @@ import { Badge } from 'nifty-ui';
 </Badge>
 ```
 
-## Types
+## Props
 
 #### Size
 
@@ -180,23 +180,17 @@ import { Badge } from 'nifty-ui';
   </div>
 </div>
 
-### className <br /> (optional)
+#### className <br /> (optional)
 
-<div className='flex justify-between gap-3 my-10'>
-
-<div className="flex flex-col">
-  <h2 className="text-center underline">className</h2>
-
-```tsx
-<Badge size="md" variant="default" className="...">
-  ...
-</Badge>
-```
-
-</div>
-
-<div className="flex flex-col">
-  <h2 className="text-center underline">Description</h2>
-  <p className="flex mt-6 px-4">Style how you need, by using Tailwind to modify the className.</p>
-</div>
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">className</h2>
+    ```tsx
+    <Badge className="...">...</Badge>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-5 px-4">Style how you need, by using Tailwind to modify the className.</p>
+  </div>
 </div>

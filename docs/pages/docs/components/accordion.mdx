@@ -52,88 +52,64 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from 'ni
 
 ## Props
 
-### Types
-
-<div className='flex justify-between gap-3 my-10'>
-
-{' '}
-
-<div className="flex flex-col">
-  <h2 className="text-center underline">className</h2>
-  ```tsx
-  <Accordion className="...">...</Accordion>
-  ```
-</div>
-
-{' '}
-
-<div className="flex flex-col">
-  <h2 className="text-center underline">Description</h2>
-  <p className="flex mt-8 px-4">Style how you need, by using Tailwind to modify the className.</p>
-</div>
-
-</div>
-
 #### Type
 
-<div className='flex gap-3 my-10'>
-
-<div className="flex flex-col">
-  <h2 className="text-center underline">single</h2>
-  ```tsx
-  <Accordion type="single">...</Accordion>
-  ```
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Single</h2>
+    ```tsx
+    <Accordion type="single">...</Accordion>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">If you only want one little dropdown.</p>
+  </div>
 </div>
 
-<div className="flex flex-col justify-center">
-  <p className="flex mt-8 px-8">If you only want one little dropdown.</p>
-</div>
-</div>
-
-<div className="flex gap-3">
-
-<div>
-  <h2 className="text-center underline">multiple</h2>
-  ```tsx
-  <Accordion type="multiple">...</Accordion>
-  ```
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Multiple</h2>
+    ```tsx
+    <Accordion type="multiple">...</Accordion>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 mt-6">
+    <p className="flex mt-6 px-4">If you only want all the little dropdowns.</p>
+  </div>
 </div>
 
-  <p className="flex mt-10 pt-4 px-4">If you only want all the little dropdowns.</p>
+#### Collapsible
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Collapsible</h2>
+    ```tsx
+    <Accordion collapsible>...</Accordion>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">
+      This allows you to HIDE information when clicked. (If excluded will trigger False and all the dropdowns will be
+      open)
+    </p>
+  </div>
 </div>
 
-### Collapsible
+#### className <br /> (optional)
 
-<div className='flex justify-between gap-3 my-10'>
-
-<div className="flex w-1/2 flex-col">
-  <h2 className="text-center underline">true</h2>
-  ```tsx
-  <Accordion collapsible>...</Accordion>
-  ```
-</div>
-
-<div className="flex">
-  <p className="flex mt-8 px-10 py-5">
-    Use this to HIDE the information when users arrive, or don&apos;t its up to you
-  </p>
-</div>
-
-</div>
-
-<div className='flex  gap-3 my-10'>
-
-<div className="flex w-1/2 flex-col">
-  <h2 className="text-center underline">False</h2>
-  ```tsx
-  <Accordion>...</Accordion>
-  ```
-</div>
-
-<div className="flex">
-  <p className="flex mt-8 px-10 py-5">
-    Use this to SHOW the information when users arrive, or don&apos;t its up to you
-  </p>
-</div>
-
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">className</h2>
+    ```tsx
+    <Accordion type="single" className="...">
+      ...
+    </Accordion>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">Style how you need, by using Tailwind to modify the className.</p>
+  </div>
 </div>
