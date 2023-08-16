@@ -23,15 +23,16 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         className={cx(
-          'inline-flex items-center justify-center px-2 py-1 rounded-md text-sm font-medium ring-offset-background transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+          'inline-flex items-center justify-center px-2 py-1 rounded-md text-sm font-medium text-background-dark ring-offset-background transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
           className,
           variantClassNames[variant],
           {
-            'bg-primary text-primary-foreground hover:bg-primary/70 shadow-md': variant === 'default',
-            'bg-danger text-warning-foreground hover:bg-danger/70 shadow-sm': variant === 'destructive',
-            'border border-input bg-transparent hover:bg-primary hover:text-accent-foreground': variant === 'outline',
-            'bg-accent text-secondary-foreground hover:bg-accent/70 shadow-sm': variant === 'secondary',
-            'hover:bg-transparent hover:text-accent': variant === 'ghost',
+            'bg-primary text-background-dark hover:bg-primary/70 shadow-md': variant === 'default',
+            'bg-danger text-background-dark hover:bg-danger/70 shadow-sm': variant === 'destructive',
+            'border border-primary bg-transparent hover:bg-primary/40 hover:text-background-dark text-primary':
+              variant === 'outline',
+            'bg-accent text-background-dark hover:bg-accent/70 shadow-sm': variant === 'secondary',
+            'text-primary/20 hover:bg-transparent hover:text-accent': variant === 'ghost',
             'underline-offset-4 hover:underline': variant === 'link',
           },
           {
