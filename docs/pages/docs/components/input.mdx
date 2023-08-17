@@ -8,8 +8,31 @@ Simple input field for use at your discression.
 
 ---
 
-import { Input } from 'nifty-ui';
+import { Input, Label } from 'nifty-ui';
 
-<div>
-  <Input type="email" placeholder="Email" />
+<div className="flex flex-col gap-5">
+  <div className="flex justify-between">
+    <div>
+      <Label htmlFor="text">Large</Label>
+      <Input id="text" size="lg" type="text" placeholder="Large" />
+    </div>
+    <div>
+      <Label htmlFor="text">Meduim</Label>
+      <Input size="md" type="text" placeholder="Medium" />
+    </div>
+    <div>
+      <Label htmlFor="text">Small</Label>
+      <Input size="sm" type="text" placeholder="Small" />
+    </div>
+  </div>
 </div>
+
+## Usage
+
+```tsx
+<Input id="text" size="lg" type="text" placeholder="text" />
+```
+
+## Props
+
+This is designed to use text (strings, passwords, emails) and numbers. Use all others at own risk, it will probably break.
