@@ -8,12 +8,27 @@ For labeling stuff your doing.
 
 ---
 
-import { Checkbox, Label } from 'nifty-ui';
+import { Label } from 'nifty-ui';
 
-<div className="flex items-center space-x-2">
-  <Label size="sm" htmlFor="terms">
-    Accept terms and conditions
-  </Label>
+<div className="flex flex-col space-y-5">
+  <div>
+    Large
+    <Label size="lg" htmlFor="terms">
+      Accept terms and conditions
+    </Label>
+  </div>
+  <div>
+    Medium
+    <Label size="md" htmlFor="terms">
+      Accept terms and conditions
+    </Label>
+  </div>
+  <div>
+    Small
+    <Label size="sm" htmlFor="terms">
+      Accept terms and conditions
+    </Label>
+  </div>
 </div>
 
 ## Usage
@@ -21,3 +36,51 @@ import { Checkbox, Label } from 'nifty-ui';
 ```tsx
 <Label htmlFor="terms">Accept terms and conditions</Label>
 ```
+
+## Props
+
+#### Size
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Small</h2>
+    ```tsx
+    <Label size="sm" htmlFor="...">
+      ...
+    </Label>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">A small Label for the little things.</p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Medium</h2>
+    ```tsx
+    <Label size="md" htmlFor="...">
+      ...
+    </Label>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 mt-5">
+    <p className="flex mt-6 px-4">A more default sized label for more common use.</p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Large</h2>
+    ```tsx
+    <Label size="lg" htmlFor="...">
+      ...
+    </Label>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 mt-5">
+    <p className="flex mt-6 px-4">A bit larger label, more bold than the others.</p>
+  </div>
+
+</div>
