@@ -3,10 +3,18 @@ import { cx } from '../utils';
 
 export type SkeletonProps = {
   className?: 'string';
+  zombie?: 'true';
 };
 
-const Skeleton = ({ className, ...props }: HTMLAttributes<HTMLDivElement>) => {
-  return <div className={cx('animate-pulse rounded-md bg-gray-500', className)} {...props} />;
+const Skeleton = ({ className, zombie, ...props }: HTMLAttributes<HTMLDivElement> & SkeletonProps) => {
+  return (
+    <div
+      className={cx('rounded-md bg-gray-500', className, {
+        'animate-pulse': zombie,
+      })}
+      {...props}
+    />
+  );
 };
 
 export { Skeleton };

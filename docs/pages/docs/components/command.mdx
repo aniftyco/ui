@@ -29,7 +29,7 @@ import {
   CommandShortcut,
 } from "nifty-ui";
 
-export default () => {
+export const CommandDemo = () => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     const down = (e) => {
@@ -75,6 +75,10 @@ return (
   </CommandDialog>
 </div>
 ); };
+
+<div>
+  <CommandDemo />
+</div>
 
 ## Usage
 
