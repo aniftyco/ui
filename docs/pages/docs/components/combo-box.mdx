@@ -53,14 +53,19 @@ return (
 
 <Popover open={open} onOpenChange={setOpen}>
   <PopoverTrigger asChild>
-    <Button variant="outline" role="combobox" aria-expanded={open} className="w-[200px] justify-between">
+    <Button
+      variant="default"
+      role="combobox"
+      aria-expanded={open}
+      className="w-[200px] justify-between dark:bg-primary"
+    >
       {value ? frameworks.find((framework) => framework.value === value)?.label : 'Select framework...'}
       <IconSelector className="ml-2 h-4 w-4 shrink-0 opacity-50" />
     </Button>
   </PopoverTrigger>
-  <PopoverContent className="w-[200px] bg-background-dark/90">
+  <PopoverContent className="w-[200px] bg-background-light dark:bg-background-dark/90">
     <Command>
-      <CommandInput className="text-sm h-8 my-2 px-1" placeholder="Search framework..." />
+      <CommandInput className="text-sm h-8 px-1" placeholder="Search framework..." />
       <CommandEmpty>No framework found.</CommandEmpty>
       <CommandGroup>
         {frameworks.map((framework) => (
