@@ -20,3 +20,53 @@ import { ComponentProps } from 'react';
 ```tsx
 <Slider defaultValue={[33]} max={100} step={1} />
 ```
+
+## Props
+
+<div className="flex justify-between gap-3 my-10">
+
+  <div className="flex flex-col w-1/2">
+  <h2 className="text-center underline">default</h2>
+    ```tsx
+    <Slider defaultValue={[...]} max={...} step={...} />
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">
+      Set a value to have the progress bar pre-loaded. It can be zero.
+    </p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+
+  <div className="flex flex-col w-1/2">
+  <h2 className="text-center underline">max</h2>
+    ```tsx
+    <Slider defaultValue={[...]} max={...} step={...} />
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">
+      Limit the sliders range, 100 is full. Calculate accordingly.
+    </p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+
+  <div className="flex flex-col w-1/2">
+  <h2 className="text-center underline">step</h2>
+    ```tsx
+    <Slider defaultValue={[...]} max={...} step={...} />
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">
+      Im sure step does something important.
+    </p>
+  </div>
+</div>

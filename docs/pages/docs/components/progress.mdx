@@ -28,4 +28,38 @@ return <Progress value={progress} className="w-[60%]" />
   <ProgressDemo />
 </div>
 
+## Usage
+
+```tsx
+<Progress value={progress} className="w-[60%]" />
+```
+
 ## Props
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Value</h2>
+    ```tsx
+    <Progress value="...">...</Progress>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">Set the useEffect to modify the amount covered by the primary.</p>
+  </div>
+</div>
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">className</h2>
+    ```tsx
+    <Progress value="..." className="...">
+      ...
+    </Progress>
+    ```
+  </div>
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">Use this to customize the styling of the main component.</p>
+  </div>
+</div>

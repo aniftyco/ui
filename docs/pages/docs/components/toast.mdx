@@ -37,3 +37,24 @@ return (
   <ToastDemo />
   <Toaster />
 </div>
+
+## Usage
+
+```tsx
+<Button
+  variant="..."
+  onClick={() => {
+    toast({
+      title: '...',
+      description: '...',
+      action: (
+        <ToastAction variant="..." altText="...">
+          ...
+        </ToastAction>
+      ),
+    });
+  }}
+>
+  ...
+</Button>
+```
