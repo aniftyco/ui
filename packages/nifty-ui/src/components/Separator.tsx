@@ -10,7 +10,7 @@ const Separator = forwardRef<
     ref={ref}
     decorative={decorative}
     orientation={orientation}
-    className={cx('shrink-0 bg-border', orientation === 'horizontal' ? 'h-[1px] w-full' : 'h-full w-[1px]', className)}
+    className={cx('shrink-0 bg-background', orientation === 'horizontal' ? 'h-[2px] w-full' : 'h-full w-[2px]')}
     {...props}
   />
 ));

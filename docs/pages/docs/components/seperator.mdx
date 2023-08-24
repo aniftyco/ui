@@ -31,44 +31,47 @@ import { Separator, Label } from 'nifty-ui';
 
 ## Props
 
+Color is set to background.
+
 #### Orientation
 
-<div className="flex flex-col gap-4">
-
-#### Horizontal
-
-<div className="flex flex-col">
-  <label
-    htmlFor="terms"
-    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-  >
-    Accept terms and conditions
-  </label>
-  <Separator orientation="Horizonal" />
-  <label
-    htmlFor="terms"
-    className="text-sm font-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-  >
-    Accept terms and conditions
-  </label>
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">horizontal</h2>
+    ```tsx
+    <Seperator />
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">By default this component is horizontal.</p>
+  </div>
 </div>
 
-#### Vertical
-
-<div className="flex space-x-2">
-  <label
-    htmlFor="terms"
-    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-  >
-    Accept terms and conditions
-  </label>
-  <Separator orientation="vertical" />
-  <label
-    htmlFor="terms"
-    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-  >
-    Accept terms and conditions
-  </label>
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">vertical</h2>
+    ```tsx
+    <Seperator orientation="vertical" />
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">Add the orentation key word to change the variant to vertical.</p>
+  </div>
 </div>
 
+#### className <br /> (optional)
+
+<div className="flex justify-between gap-3 my-10">
+  <div className="flex flex-col w-1/2">
+    <h2 className="text-center underline">className</h2>
+    ```tsx
+    <Seperator className="..." />
+    ```
+  </div>
+  <div className="flex flex-col w-1/2 ">
+    <h2 className="text-center underline">Description</h2>
+    <p className="flex mt-6 px-4">Style how you need, by using Tailwind to modify the className.</p>
+  </div>
 </div>
